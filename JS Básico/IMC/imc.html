@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>IMC</title>
+  </head>
+  <body>
+    <form class="form container text-center">
+      <div class="cabecalho row justify-content-center">
+        <img
+          id="ícone"
+          src="img/coracao-com-bracos-musculosos-de-ginasta.png"
+          alt="Ícone"
+          height="50px"
+          width="50px"
+          class="mx-3"
+        />
+        <h1 name="header">Cálculo IMC</h1>
+      </div>
+      <div class="row justify-content-between">
+        <h2 class="col-sm text-left">IMC</h2>
+        <h2 class="col-sm text-left">Peso</h2>
+        <div class="w-100"></div>
+        <p class="col-sm text-left">Menor que 18.5</p>
+        <p class="col-sm text-left">Abaixo do peso</p>
+        <div class="w-100"></div>
+        <p class="col-sm text-left">Entre 18.5 e 24.9</p>
+        <p class="col-sm text-left">Peso normal</p>
+        <div class="w-100"></div>
+        <p class="col-sm text-left">Entre 25 e 29.9</p>
+        <p class="col-sm text-left">Sobrepeso</p>
+        <div class="w-100"></div>
+        <p class="col-sm text-left">Entre 30 e 34.9</p>
+        <p class="col-sm text-left">Obesidade grau 1</p>
+        <div class="w-100"></div>
+        <p class="col-sm text-left">Entre 35 e 39.9</p>
+        <p class="col-sm text-left">Obesidade grau 2</p>
+        <div class="w-100"></div>
+        <p class="col-sm text-left">Acima de 40</p>
+        <p class="col-sm text-left">Obesidade grau 3</p>
+      </div>
+      <div id="input-field">
+        <br />
+        <h2 class="row">Calcule seu IMC:</h2>
+        <div class="row">
+          <label for="peso">Peso:</label>
+          <input
+            type="text"
+            name="peso"
+            id="input-peso"
+            class="col"
+            placeholder="Exemplo: 80.1 ou 40 ou 40.47"
+          />
+          <span class="unidade col-2 text-left">kg</span>
+        </div>
+        <div class="row">
+          <label for="altura">Altura: </label>
+          <input
+            type="text"
+            name="altura"
+            id="input-altura"
+            class="col"
+            placeholder="Exemplo: 1.5 ou 1.77 ou 2"
+          />
+          <span class="unidade col-2 text-left">m</span>
+        </div>
+        <br />
+        <button class="btn btn-primary">CALCULAR</button>
+      </div>
+      <div class="resultado">
+        <br />
+        <p style="border: 1px solid grey">Resultado</p>
+      </div>
+    </form>
+    <script src="js/imc.js"></script>
+  </body>
+</html>

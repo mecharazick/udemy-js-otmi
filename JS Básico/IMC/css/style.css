@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+:root {
+  --primary-collor: orange;
+  --primary-collor-darker: rgb(161, 105, 0);
+  --focus-color: cyan;
+  --focus-color-darker: blue;
+  --placeholder-color: gray;
+}
+
+::placeholder{
+  color: var(--placeholder-color);
+  font-size: 1.2em;
+}
+
+body {
+  box-sizing: border-box;
+  display: flex;
+  background: #252525;
+  background-image: url("https://www.recreiodajuventude.com.br/userfiles/redacao/posts/academia-campanha-1.jpg");
+  background-size:cover;
+  background-position: center;
+  background-attachment: scroll;
+  background-blend-mode:soft-light;
+  font-family: "Open sans", sans-serif;
+  font-size: 1.3em;
+}
+.container {
+  filter: opacity(0.9);
+  max-width: 640px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+form input,
+form label,
+form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+form a {
+  text-decoration: none;
+  font-family: sans-serif;
+  color: #000000;
+}
+form input {
+  font-size: 24px;
+  height: 50px;
+  padding: 0 20px;
+}
+form .tabela {
+  margin: 20px;
+}
+.correct-input-text {
+  background-color: rgb(129, 214, 129);
+  outline: 1px solid green;
+}
+.wrong-input-text {
+  background-color: rgb(250, 81, 81);
+  outline: 1px solid red;
+}
+form input .unidade {
+  font:1.5em medium bold !important;
+}
