@@ -1,28 +1,13 @@
-const order = words => words.split(' ').sort((a,b) => 
-a.charAt(a.search(/[0-9]/g)) - b.charAt(b.search(/[0-9]/g))
-).join(' ');
-
-function high(x){
-    const alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','w','x','y','z'];
-    const letterScores = alphabet.reduce((table, value, index) => {table.push({letter: value, score:index+1}); return table;},[]);
-    
-    const phrase = x.split(' ');
-    const scores = [];
-    
-    for(let i in phrase){
-    scores[i] = new WordPoints(phrase[i]);
-    }
-    const sortedScore = scores.sort((a,b) => {return b.wordScore - a.wordScore;});
-    return sortedScore[0].word;
-    
-    function WordPoints(word){
-    this.word = word;
-    this.wordScore = word.split('').reduce((acum, valor) => {
-        for(let letterI of letterScores){
-            if(valor === letterI.letter) return acum + letterI.score;
-        }
-    },0)
-    }
-    }
-
-console.log(high('man i need a taxi up to ubud'));
+['zero','one','two','three','four','five', 'six','seven','eight','nine'].forEach((e, i) =>{
+    this[e] = op => op ? op(i):i;
+  });
+  //Nesse caso, ao usar this dentro do forEach(que não define um escopo próprio)
+  //e dentro da arrow function que também não atribui this a um escopo próprio
+  //a plavra reservada this se refere ao objeto global e ao usar
+  //this[e] = algumaCoisa, estamos atribuindo à chave e do objeto global o valor da direita.
+  //Como o escopo é o global, qualquer coisa nesse escopo consegue acessar essas funções criadas.
+  
+  const plus = b => function(a){return a+b;};
+  const minus = b => function(a){return a-b;};
+  const times = b => function(a){return a*b;};
+  const dividedBy = b => function(a){return Math.floor(a/b);};
