@@ -7,7 +7,7 @@
   //this[e] = algumaCoisa, estamos atribuindo à chave e do objeto global o valor da direita.
   //Como o escopo é o global, qualquer coisa nesse escopo consegue acessar essas funções criadas.
   
-  const plus = b => function(a){return a+b;};
-  const minus = b => function(a){return a-b;};
-  const times = b => function(a){return a*b;};
-  const dividedBy = b => function(a){return Math.floor(a/b);};
+const plus = b => function(a){return a+b;};
+const minus = b => function(a){return a-b;};
+const times = b => function(a){return a*b;};
+const dividedBy = b => function(a){return Math.floor(a/b);};
