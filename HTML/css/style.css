@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+html,
+default,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  background-color: #182868;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+}
+
+.nav .nav-logo {
+  margin: 5px;
+  width: 35px;
+  height: 80px;
+}
+
+.nav .nav-list {
+  display: flex;
+  margin: 5px;
+  list-style-type: none;
+}
+
+.nav .nav-list .nav-item {
+  margin: 5px;
+  padding: 5px;
+}
+
+.nav .nav-list .nav-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav .nav-list .nav-dropdown .dropdown-icon::after {
+  content: attr(data-icon);
+  background-color: black;
+  height: 2px;
+  width: 2px;
+  float: right;
+}
+
+.hidden {
+  height: 0px;
+  overflow: hidden;
+}
+
+.nav-dropdown-menu {
+  list-style: inherit;
+  background: black;
+  position: absolute;
+  transform: translateY(10px);
+}

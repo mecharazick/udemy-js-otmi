@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="container">
+        <h1>Gerador de senha</h1>
+        <form class = "form" action="submit">
+        <div class="result"></div>  
+        <div style = "margin-bottom: 15px;">
+          <label for="num-qtd">Quantidade de caracteres: </label>  
+          <input type="number" name="qtd" class="num-qtd" value = 0 min = 0 max = 50>
+        </div>
+        <div>
+          <label for="useNum">Usar números: </label>
+          <input name = "useNum" id = "useNum" class = "chkbox" type="checkbox" checked>
+        </div>
+        <div>
+          <label for="useUpL">Usar letra maiúscula: </label>
+          <input name = "useUpL" id = "useUpL" class = "chkbox" type="checkbox" checked>
+        </div>
+        <div>
+          <label for="useDownL">Usar letra minúscula: </label>
+          <input name = "useDownL" id = "useDownL" class = "chkbox" type="checkbox" checked>
+        </div>
+        <div>
+          <label for="useChar">Usar caracter especial: </label>
+          <input name = "useChar" id = "useChar" class = "chkbox" type="checkbox" checked>
+        </div>
+        <button class = "btn" type="submit">Generate</button>
+      </form>
+      </section>
+    <script src="assets/js/bundle.js"></script>
+  </body>
+</html>

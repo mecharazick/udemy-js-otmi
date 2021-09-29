@@ -1,14 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
     <section>
+      <nav class="nav nav-expanded-sm">
+        <img
+          src="./assets/images/icone2-negativo.png"
+          alt="AMS Consultoria Logo"
+          class="nav-logo"
+        />
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="javascript:;" class = "nav-dropdown" data-toggle="#dropdown-one"
+              >DROPDOWN
+              <span className="dropdown-icon">&#9662</span
+            ></a>
+            <ul class="nav-dropdown-menu hidden" id="dropdown-one">
+              <li>Teste 1</li>
+              <li>Teste 2</li>
+            </ul>
+          </li>
+          <li class="nav-item">Teste 1</li>
+          <li class="nav-item">Teste 1</li>
+          <li class="nav-item">Teste 1</li>
+        </ul>
+      </nav>
     </section>
-</body>
+    <script type="text/javascript">
+      const dropdownMenuOne = document.querySelector("#dropdown-one");
+      const dropdown = document.querySelectorAll(".nav-dropdown");
+      dropdown.forEach(item => item.addEventListener("click", e => {
+          e.preventDefault();
+          console.log(e.target);
+          const childTag = item.dataset.toggle;
+          const menu = document.querySelector(childTag);
+          menu.classList.contains('hidden') ? menu.classList.remove('hidden') : menu.classList.add('hidden');
+        }))
+    </script>
+  </body>
 </html>
