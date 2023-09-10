@@ -1,5 +1,4 @@
-import 'core-js/stable';
-import 'regenerator-runtime/regenerator';
+// import 'core-js/stable';
+// import 'regenerator-runtime/regenerator';
 
-import './assets/css/style.css';
-
+import "./assets/css/style.css";

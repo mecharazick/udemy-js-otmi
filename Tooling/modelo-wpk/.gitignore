@@ -1,1 +1,5 @@
-node_modules
+#exclude protected files
+.env
+
+#exclude folders
+node_modules/*
